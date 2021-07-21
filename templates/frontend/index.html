@@ -1,0 +1,33 @@
+{% load pwa %}
+{% load i18n %}
+{% load render_bundle from webpack_loader %}
+
+{% get_current_language as LANGUAGE_CODE %}
+
+<!DOCTYPE html>
+<html lang="{{ LANGUAGE_CODE }}">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Django + React + Webpack boilerplate used and made by Labcodes" />
+  <title>New user registration</title>
+  <link href="https://use.typekit.net/boj8rad.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,500;0,600;1,500;1,600&amp;display=swap" rel="stylesheet">  
+
+  <!-- Webpack rendered CSS -->
+  {% render_bundle 'main' 'css' %}
+
+  <!-- PWA metatags -->
+  {% progressive_web_app_meta %}
+</head>
+
+<body class="container lab-test__bg">
+  <noscript>This page requires javascript to run. Please, enable javascript.</noscript>
+  <div id="react-app"></div>
+  <!-- Webpack rendered JS -->
+  {% render_bundle 'main' 'js' %}
+
+</body>
+
+</html>
