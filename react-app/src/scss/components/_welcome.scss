@@ -4,6 +4,11 @@
   padding-bottom: 100px;
 
   .welcome__title { color: $purple-60; }
+
+  @media (max-width: 600px){
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 .lab-test__bg{
@@ -53,5 +58,9 @@ header{
     margin-bottom: 0;
     color: $purple-40;
     font-size: $font-size-5;
+  }
+  @media (max-width: 600px){
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
