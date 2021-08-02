@@ -56,13 +56,15 @@ export class Welcome extends React.Component {
             <div className='columns'>
               <div className='column is-half'>
                 <h2>Let's go!<br/>
-                It is all about you</h2>
+                  It is all about you</h2>
               </div> 
             </div>
             <div className='columns'>
-              <div className='column lab-test-form'>
-                <TextInput id='name' label="What's your first and last name?" required />
-                <TextInput id='username' label="Choose an username" required />
+              <div className='column'>
+                <div className= "lab-test-form">
+                  <TextInput id='name' label="What's your first and last name?" required />
+                  <TextInput id='username' label="Choose an username" required />
+                </div>
               </div>
               <div className='column'>
                 <TextInput id='email' label="Your email" required />
