@@ -80,7 +80,7 @@
     "workbox-webpack-plugin": "^5.1.1"
   },
   "dependencies": {
-    "@labcodes/confetti-ds": "0.1.0-alpha.0",
+    "@labcodes/confetti-ds": "0.1.0-alpha.4",
     "file-loader": "^6.0.0",
     "jest": "^25.1.0",
     "lodash": "^4.17.15",
