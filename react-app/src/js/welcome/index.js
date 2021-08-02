@@ -3,7 +3,16 @@ import Helmet from "react-helmet";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
-import { TextInput, PasswordInput, OutlineButton, Button, Icon, Checkbox, Toggle } from "@labcodes/confetti-ds";
+import {
+  TextInput,
+  PasswordInput,
+  OutlineButton,
+  Button,
+  Icon,
+  Checkbox,
+  Toggle,
+  Tooltip
+} from "@labcodes/confetti-ds";
 
 import { fetchWelcomeMessage } from "./actions";
 
@@ -46,7 +55,8 @@ export class Welcome extends React.Component {
             </div>
             <div className='columns'>
               <div className='column is-half'>
-                <h2>Let's go!It is all about you</h2>
+                <h2>Let's go!<br/>
+                It is all about you</h2>
               </div> 
             </div>
             <div className='columns'>
@@ -84,7 +94,13 @@ export class Welcome extends React.Component {
                     <h3>Set some personal preferences</h3>
                     <div className="lab-test__toggle">
                       <p>Display my e-mail to readers</p>
-                      <Toggle id="toggle-4" name="toggle-preferences" color="purple"/>
+                      <Tooltip id="tooltip-top" 
+                        text="Your email will be shown in the posts
+                        you have written and your personal 
+                        author page." 
+                        placement="top-end">
+                        <Toggle id="toggle-4" name="toggle-preferences" color="purple"/>
+                      </Tooltip>
                     </div>
                     <div className="lab-test__toggle">
                       <p>Receive notifications on my e-mail</p>
