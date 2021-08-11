@@ -11,7 +11,8 @@ import {
   Icon,
   Checkbox,
   Toggle,
-  Tooltip
+  Tooltip,
+  Alert
 } from "@labcodes/confetti-ds";
 
 import { fetchWelcomeMessage } from "./actions";
@@ -55,7 +56,9 @@ export class Welcome extends React.Component {
             </div>
             <div className='columns'>
               <div className='column is-half'>
-                <h2>Let's go!<br/>
+                <h2>
+                  Let's go!
+                  <br />
                   It is all about you</h2>
               </div> 
             </div>
@@ -89,6 +92,9 @@ export class Welcome extends React.Component {
                   <Checkbox id="2" name="manage" label="Manage the system" />
                   <Checkbox id="3" name="review" label="Review texts" /> 
                 </fieldset>
+                <div className="alert-section">
+                  <Alert type="error" text="You must select at least one item" icon="remove" />
+                </div>
               </div> 
               <div className='column is-half'>
                 <div className="columns">

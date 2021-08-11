@@ -57,9 +57,14 @@ header{
     margin-bottom: 0;
     color: $purple-40;
     font-size: $font-size-5;
+    font-weight: 600;
   }
   @media (max-width: 600px){
     padding-left: 20px;
     padding-right: 20px;
   }
+}
+
+.alert-section {
+  padding-top: 16px;
 }
