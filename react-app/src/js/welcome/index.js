@@ -38,8 +38,8 @@ export class Welcome extends React.Component {
 
     return (
       <main className="welcome">
-        <div className='columns is-variable is-4 is-centered'>
-          <div className='column is-three-quarters'>
+        <div className='columns is-variable is-4 is-centered-desktop'>
+          <div className='column is-three-quarters-desktop'>
             <div className='columns'>
               <div className='column'>
                 <p>

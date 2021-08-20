@@ -2,10 +2,17 @@
   background-color: $white;
   border-bottom-right-radius: $layout-31;
   padding-bottom: 100px;
+  padding-left: 24px;
+  padding-right: 24px;
 
-  @media (max-width: 600px){
+  @include until($tablet) {
     padding-left: 20px;
     padding-right: 20px;
+    border-bottom-right-radius: 0;
+  }
+  @include until($desktop) {
+    padding-left: 24px;
+    padding-right: 24px;
   }
 }
 
@@ -39,6 +46,10 @@ h2,h3,h4{
   display: flex;
   justify-content: flex-end;
   padding-top: 60px;
+
+  @include until($tablet) {
+    justify-content: stretch;
+  }
 }
 
 button:first-child {
@@ -47,6 +58,8 @@ button:first-child {
 
 header{
   background-color: $white;
+  padding-left: 24px;
+  padding-right: 24px;
   h1{
     color: $purple-60;
     font-weight: 600;
@@ -62,10 +75,11 @@ header{
     font-size: $font-size-5;
     font-weight: 600;
   }
-  @media (max-width: 600px){
+  @include until($tablet) {
     padding-left: 20px;
     padding-right: 20px;
   }
+
 }
 
 .alert-section {
