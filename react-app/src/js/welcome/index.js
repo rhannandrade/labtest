@@ -73,9 +73,11 @@ export class Welcome extends React.Component {
                 <TextInput id='email' label="Your email" required />
               </div>
             </div>
-            <div className='column is-half'>
-              <h4><Icon type="key" color="black-75" /> SECURE YOUR ACCOUNT</h4>
-            </div> 
+            <div className="columns">
+              <div className='column is-half'>
+                <h4><Icon type="key" color="black-75" /> SECURE YOUR ACCOUNT</h4>
+              </div> 
+            </div>
             <div className='columns'>
               <div className='column'>
               <PasswordInput id='password' label="Set a password" helpMessage="At least 8 characters, containing letters and numbers" required />

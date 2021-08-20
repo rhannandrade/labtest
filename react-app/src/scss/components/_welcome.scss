@@ -22,6 +22,9 @@ h2,h3,h4{
 
 .lab-test__bg{
   background-color: $purple-10;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
 }
 
 .lab-test-form{
