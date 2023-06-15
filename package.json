@@ -84,7 +84,7 @@
     "file-loader": "^6.0.0",
     "jest": "^25.1.0",
     "lodash": "^4.17.15",
-    "prop-types": "^15.7.2",
+    "prop-types": "^15.8.1",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "react-helmet": "^5.2.1",
