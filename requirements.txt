@@ -4,7 +4,7 @@ attrs==19.3.0
 black==19.10b0
 click==7.1.1
 dj-database-url==0.5.0
-Django==3.0.4
+Django==4.2.27
 django-heroku==0.3.1
 django-pwa==1.0.8
 django-webpack-loader==0.7.0
@@ -20,7 +20,7 @@ pyflakes==2.1.1
 python-decouple==3.3
 pytz==2019.3
 regex==2020.2.20
-sqlparse==0.3.1
+sqlparse==0.5.4
 toml==0.10.0
 typed-ast==1.4.1
 whitenoise==5.0.1
